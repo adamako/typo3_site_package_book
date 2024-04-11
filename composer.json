@@ -1,0 +1,23 @@
+{
+    "name": "kotech/book",
+    "type": "typo3-cms-extension",
+    "description": "typo3 book extension development",
+    "homepage": "https://typo-book.ddev.site",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "require": {
+        "typo3/cms-core": "^12.4",
+        "typo3/cms-rte-ckeditor": "^12.4",
+        "typo3/cms-fluid-styled-content": "^12.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kotech\\Book\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "book"
+        }
+    }
+}
