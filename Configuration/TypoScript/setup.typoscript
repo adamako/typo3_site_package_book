@@ -18,6 +18,23 @@ page {
     typeNum = 0
     shortcutIcon = EXT:book/Resources/Public/Icons/favicon.ico
 
+    includeCSS {
+        bootstrap = https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css
+        bootstrap.external = 1
+        website = EXT:book/Resources/Public/Css/website.css
+    }
+
+    // Part 3: JavaScript file inclusion
+    includeJSFooter {
+        jquery = https://code.jquery.com/jquery-3.2.1.slim.min.js
+        jquery.external = 1
+        popper = https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js
+        popper.external = 1
+        bootstrap = https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
+        bootstrap.external = 1
+        website = EXT:book/Resources/Public/JavaScript/website.js
+    }
+
     10 = FLUIDTEMPLATE
     10 {
         # Template names will be generated automatically by converting the applied
